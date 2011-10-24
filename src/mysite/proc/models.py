@@ -18,7 +18,7 @@ AGENT_TYPE = (
         ('W', 'Web'),
     )
 
-class Dealer(models.Model):
+class Dealer1(models.Model):
     account         =models.CharField(max_length=8,blank=True)
     addresses       = generic.GenericRelation( Addres, null=True, blank=True )        
     check_for_ip    =models.BooleanField(default=False)
